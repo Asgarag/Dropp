@@ -9,57 +9,93 @@
 
 <body>
   <div class="page">
-    <div class="main-conteiner">
-      <header class="header">
-        <img class="logotype header__logotype" src="images/Logo.svg" alt="Логотип Dropp">
+    <header class="header">
+      <div class="main-container header__container">
+        <h1 class="header__logotype logotype">
+            DR<span class="logotype__char">O</span>PP
+          </h1>
         <nav class="menu header__menu">
           <ul class="menu__list">
-            <li class="menu__item menu__item_active">
-              <a class="menu__link link" href="#">HOME</a>
+            <li class="menu__list-item">
+              <a class="menu__link link" href="#home">HOME</a>
             </li>
-            <li class="menu__item">
-              <a class="menu__link link" href="#">SERVICES</a>
+            <li class="menu__list-item">
+              <a class="menu__link link" href="#services">SERVICES</a>
             </li>
-            <li class="menu__item">
-              <a class="menu__link link" href="#">PORTFOLIO</a>
+            <li class="menu__list-item">
+              <a class="menu__link link" href="#portfolio">PORTFOLIO</a>
             </li>
-            <li class="menu__item">
+            <li class="menu__list-item">
               <a class="menu__link link" href="#">ABOUT</a>
             </li>
-            <li class="menu__item">
+            <li class="menu__list-item">
+              <a class="menu__link link" href="#">BLOG</a>
+            </li>
+            <li class="menu__list-item">
               <a class="menu__link link" href="#">CONTACT</a>
             </li>
           </ul>
         </nav>
-      </header>
-      <div class="background-image"></div>
-      <div class="main-conteiner__layout">
-        <span class="slogan">COME,STAY FOR A COFFEE!</span>
-        <button class="button main-conteiner__button">HAVE A SEAT</button>
       </div>
-      <section class="services">
-        <div class="services__header">
-          <h2 class="services__title">SERVICES</h2>
+    </header>
+    <div class="home home-container" id="home">
+      <div class="main-container home__content">
+        <span class="home__text">COME,STAY FOR A COFFEE!</span>
+        <button class="button home__button" tabindex="-1">HAVE A SEAT</button>
+      </div>
+    </div>
+    <section class="services">
+      <div class="services__header main-container">
+        <h2 class="services__title" id="services">SERVICES</h2>
+      </div>
+      <div class="services__content">
+        <div class="main-container">
+          <article class="service services__service">
+            <img class="service__image" src="images/Pen_icon.png" alt="Pen" />
+            <h3 class="service__title">BRANDING</h3>
+            <div class="service__content">
+              <p class="service__content-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              </p>
+            </div>
+          </article>
+          <article class="service services__service">
+            <img class="service__image" src="images/PC_icon.png" alt="Personal computer" />
+            <h3 class="service__title">WEB DESIGN</h3>
+            <div class="service__content">
+              <p class="service__content-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              </p>
+            </div>
+          </article>
+          <article class="service services__service">
+            <img class="service__image" src="images/Mic_icon.png" alt="Microfon" />
+            <h3 class="service__title">MARKETING</h3>
+            <div class="service__content">
+              <p class="service__content-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              </p>
+            </div>
+          </article>
         </div>
-        <article class="service services__service icon icon_pen">
-          <h3 class="service__title">BRANDING</h3>
-          <div class="service__content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          </div>
-        </article>
-        <article class="service services__service icon icon_comp">
-          <h3 class="service__title">WEB DESIGN</h3>
-          <div class="service__content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          </div>
-        </article>
-        <article class="service services__service icon icon_mic">
-          <h3 class="service__title">MARKETING</h3>
-          <div class="service__content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          </div>
-        </article>
-      </section>
+      </div>
+    </section>
+    <div class="portfolio" id="portfolio">
+      <h2 class="portfolio__title">PORTFOLIO</h2>
+      <div class="portolio__content">
+        <img class="portolio__image" src="images/1_top.png" alt="Site" />
+        <img class="portolio__image" src="images/2_top.png" alt="Elevate" />
+        <img class="portolio__image" src="images/3_top.png" alt="Keskin kallem studio" />
+        <img class="portolio__image" src="images/4_top.png" alt="Happy forth of July" />
+        <img class="portolio__image" src="images/5_top.png" alt="Keep strong" />
+        <img class="portolio__image" src="images/6_top.png" alt="Nikes" />
+        <img class="portolio__image" src="images/1_bot.png" alt="Skyebird" />
+        <img class="portolio__image" src="images/2_bot.png" alt="Hlavathy" />
+        <img class="portolio__image" src="images/3_bot.png" alt="Two books" />
+        <img class="portolio__image" src="images/4_bot.png" alt="Car in the night" />
+        <img class="portolio__image" src="images/5_bot.png" alt="Bottles of water" />
+        <img class="portolio__image" src="images/6_bot.png" alt="Miner" />
+      </div>
     </div>
   </div>
 </body>
