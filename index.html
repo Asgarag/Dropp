@@ -41,12 +41,12 @@
     <div class="home home-container" id="home">
       <div class="main-container home__content">
         <span class="home__text">COME,STAY FOR A COFFEE!</span>
-        <button class="button home__button" tabindex="-1">HAVE A SEAT</button>
+        <a class="link home__link" tabindex="-1">HAVE A SEAT</a>
       </div>
     </div>
     <section class="services">
       <div class="services__header main-container">
-        <h2 class="services__title" id="services">SERVICES</h2>
+        <h2 class="services__title title" id="services">SERVICES</h2>
       </div>
       <div class="services__content">
         <div class="main-container">
@@ -80,23 +80,126 @@
         </div>
       </div>
     </section>
-    <div class="portfolio" id="portfolio">
-      <h2 class="portfolio__title">PORTFOLIO</h2>
+    <section class="portfolio" id="portfolio">
+        <h2 class="portfolio__title title">PORTFOLIO</h2>
       <div class="portolio__content">
-        <img class="portolio__image" src="images/1_top.png" alt="Site" />
-        <img class="portolio__image" src="images/2_top.png" alt="Elevate" />
-        <img class="portolio__image" src="images/3_top.png" alt="Keskin kallem studio" />
-        <img class="portolio__image" src="images/4_top.png" alt="Happy forth of July" />
-        <img class="portolio__image" src="images/5_top.png" alt="Keep strong" />
-        <img class="portolio__image" src="images/6_top.png" alt="Nikes" />
-        <img class="portolio__image" src="images/1_bot.png" alt="Skyebird" />
-        <img class="portolio__image" src="images/2_bot.png" alt="Hlavathy" />
-        <img class="portolio__image" src="images/3_bot.png" alt="Two books" />
-        <img class="portolio__image" src="images/4_bot.png" alt="Car in the night" />
-        <img class="portolio__image" src="images/5_bot.png" alt="Bottles of water" />
-        <img class="portolio__image" src="images/6_bot.png" alt="Miner" />
+        <div class="portolio__image-conteiner">
+          <img class="portolio__image" src="images/1_top.png" alt="Site" />
+        </div>
+        <div class="portolio__image-conteiner">
+          <img class="portolio__image" src="images/2_top.png" alt="Elevate" />
+        </div>
+        <div class="portolio__image-conteiner">
+          <img class="portolio__image" src="images/3_top.png" alt="Keskin kallem studio" />
+        </div>
+        <div class="portolio__image-conteiner">
+          <img class="portolio__image" src="images/4_top.png" alt="Happy forth of July" />
+        </div>
+        <div class="portolio__image-conteiner">
+          <img class="portolio__image" src="images/5_top.png" alt="Keep strong" />
+        </div>
+        <div class="portolio__image-conteiner">
+          <img class="portolio__image" src="images/6_top.png" alt="Nikes" />
+        </div>
+        <div class="portolio__image-conteiner">
+          <img class="portolio__image" src="images/1_bot.png" alt="Skyebird" />
+        </div>
+        <div class="portolio__image-conteiner">
+          <img class="portolio__image" src="images/2_bot.png" alt="Hlavathy" />
+        </div>
+        <div class="portolio__image-conteiner">
+          <img class="portolio__image" src="images/3_bot.png" alt="Two books" />
+        </div>
+        <div class="portolio__image-conteiner">
+          <img class="portolio__image" src="images/4_bot.png" alt="Car in the night" />
+        </div>
+        <div class="portolio__image-conteiner">
+          <img class="portolio__image" src="images/5_bot.png" alt="Bottles of water" />
+        </div>
+        <div class="portolio__image-conteiner">
+          <img class="portolio__image" src="images/6_bot.png" alt="Miner" />
+        </div>
       </div>
-    </div>
+    </section>
+    <section class="about" id="about">
+      <h2 class="about__title title">ABOUT US</h2>
+      <div class="about__content">
+        <div class="about__tabs main-container">
+          <div class="about__tab">
+            <img class="about__image" src="images/member1.png" alt="Member" />
+          </div>
+          <div class="about__tab about__tab_active">
+            <img class="about__image" src="images/member2.png" alt="Member" />
+          </div>
+          <div class="about__tab">
+            <img class="about__image" src="images/member3.png" alt="Member" />
+          </div>
+          <div class="about__tab">
+            <img class="about__image" src="images/member4.png" alt="Member" />
+          </div>
+        </div>
+        <div class="about__layout">
+          <div class="main-container about__description description">
+            <div class="description__column description__info">
+              <h3 class="description__info-title">John Smith - Lead Graphic Artist</h3>
+              <div class="description__info-content">
+                <p class="description__info-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                  in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+            <div class="description__column description__skills">
+              <h3 class="description__skills-title">Skills</h3>
+              <div class="description__skills-content bars">
+                <div class="bars__bar bar">
+                  <span class="bar__name">PHOTOSHOP</span>
+                  <progress class="bar__progress" value="100" max="100"></progress>
+                  <span class="bar__value">100%</span>
+                </div>
+                <div class="bars__bar bar">
+                  <span class="bar__name">ILLUSTRATOR</span>
+                  <progress class="bar__progress" value="98" max="100"></progress>
+                  <span class="bar__value">98%</span>
+                </div>
+                <div class="bars__bar bar">
+                  <span class="bar__name">WORDPRESS</span>
+                  <progress class="bar__progress" value="67" max="100"></progress>
+                  <span class="bar__value">67%</span>
+                </div>
+                <div class="bars__bar bar">
+                  <span class="bar__name">JOOMLA</span>
+                  <progress class="bar__progress" value="70" max="100"></progress>
+                  <span class="bar__value">70%</span>
+                </div>
+                <div class="bars__bar bar">
+                  <span class="bar__name">JQUERY</span>
+                  <progress class="bar__progress" value="58" max="100"></progress>
+                  <span class="bar__value">58%</span>
+                </div>
+              </div>
+            </div>
+            <div class="description__links">
+              <a class="description__link" href="#">
+                <img class="description__link-icon" src="images/facebook.svg" alt="Facebook icon" />
+              </a>
+              <a class="description__link" href="#">
+                <img class="description__link-icon" src="images/google+.svg" alt="google+ icon" />
+              </a>
+              <a class="description__link" href="#">
+                <img class="description__link-icon" src="images/vimeo.svg" alt="Vimeo icon" />
+              </a>
+              <a class="description__link" href="#">
+                <img class="description__link-icon" src="images/dribbble.svg" alt="Dribbble 4 icon" />
+              </a>
+              <a class="description__link" href="#">
+                <img class="description__link-icon" src="images/youTube.svg" alt="YouTube 4 icon" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </body>
 

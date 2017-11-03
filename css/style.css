@@ -15,7 +15,7 @@ body{
 }
 
 p{
-  color: #121212;
+  font-family: Arial;
 }
 
 .page{
@@ -27,8 +27,9 @@ p{
 
 .main-container{
   margin: auto;
-  min-width: 768px;
-  max-width: 1170px;
+  min-width: 798px;
+  max-width: 1200px;
+  box-sizing: border-box;
 }
 
 .link{
@@ -49,6 +50,7 @@ p{
 }
 
 .logotype{
+  padding-left: 15px;
   font-size: 70px;
   font-weight: 400;
   color: #474444;
@@ -61,18 +63,20 @@ p{
 
 .header__menu{
   float: right;
+  padding-right: 15px;
 }
 
 .menu__list{
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .menu__list-item{
   display: inline-block;
+  vertical-align: top;
   font-size: 18px;
-  padding: 42px 21px;
+  padding: 42px 15px;
   font-weight: 700;
   color: #565656;
 }
@@ -93,6 +97,7 @@ p{
   background-repeat: no-repeat;
   background-size: cover;
   opacity: .8;
+  background-color: #999;
 }
 
 .home__content{
@@ -106,7 +111,8 @@ p{
   margin: auto;
 }
 
-.home__button{
+.home__link{
+  box-sizing: border-box;
   margin: 56px auto 0;
   display: block;
   font-family: Oswald, Arial;
@@ -118,22 +124,24 @@ p{
   color: #fff;
   padding: 6px 58px;
   cursor: pointer;
+  width: 282px;
 }
 
-.home__button:hover{
+.home__link:hover{
   background-color: #d22301;
 }
 
-.services__title,.portfolio__title{
+.title{
   font-size: 32px;
   color: #fd5433;
   text-align: center;
+  min-width: 798px;
 }
 
 .services__service{
   display: inline-block;
   width: 30%;
-  margin-right: 4%;
+  margin-right: 4.5%;
 }
 
 .services__content{
@@ -156,22 +164,37 @@ p{
   text-align: center;
   font-size: 16px;
   margin: auto;
+}
+
+.service__content-text{
+  color: #121212;
   font-family: Arial;
 }
 
 .service__image{
   display: block;
   margin: auto;
+  width: 50%;
 }
 
 .portolio__content{
-  min-width: 1608px;
-  max-width: 1608px;
-  margin: auto;
+  min-width: 768px;
+}
+
+.portolio__image-conteiner{
+  float: left;
+  width: 16.65%;
+  margin-bottom: -5px;
+}
+
+.portolio__content:after{
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .portolio__image{
-  float: left;
+  width: 100%;
   position: relative;
   z-index: 0;
 }
@@ -181,8 +204,135 @@ p{
   outline: 2px solid #fd5433;
 }
 
-.portolio__content::after{
+.about__title{
+  padding-bottom: 26.56px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #828282;
+}
+
+.about__tabs{
+  margin-top: 60px;
+  text-align: center;
+}
+
+.about__tab{
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+  margin-right: 50px;
+}
+
+.about__tab:last-child{
+  margin-right: 0;
+}
+
+.about__tab_active{
+  position: relative;
+}
+
+.about__tab_active::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -90px;
+  transform: translateX(-50%);
+  border: 28px solid transparent;
+  border-bottom-width: 0;
+  border-top: 40px solid #fff;
+}
+
+.about__image{
+  width: 100%;
+}
+
+.about__layout{
+  margin-top: 60px;
+  background-color: #fd5433;
+  color: #fff;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.description__column{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.description__info{
+  width: 45%;
+}
+
+.description__skills{
+  width: 45%;
+  margin-left: 9%;
+}
+
+.about__description:after{
   content: "";
   display: block;
   clear: both;
+}
+
+.description__skills-title,.description__info-title{
+  font-size: 22px;
+}
+
+.description__info-content{
+  color: #fff;
+  font-size: 16px;
+}
+
+.description__skills-content{
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.bars__bar:not(:last-child){
+  margin-bottom: 10px;
+}
+
+.bar{
+  font-family: Arial;
+}
+
+.bar__name{
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+}
+
+.bar__progress{
+  width: 40%;
+  height: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #fd5433;
+  color: #fff;
+}
+
+.bar__progress[value]::-webkit-progress-bar{
+	background-color: #fd5433;
+}
+
+.bar__progress[value]::-webkit-progress-value{
+	background-color: #fff;
+}
+
+.bar__progress[value]::-moz-progress-bar{
+	background-color: #fff;
+}
+
+.bar__value{
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.description__links{
+  margin-top: 40px;
+}
+
+.description__link:not(:last-child){
+  margin-right: 15px;
 }
