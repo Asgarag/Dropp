@@ -65,8 +65,9 @@ p{
   padding-right: 15px;
 }
 
-.header__logotype{
-  float: left;
+.header__container{
+  display: flex;
+  justify-content: space-between;
 }
 
 .logotype{
@@ -76,10 +77,6 @@ p{
 
 .logotype__char{
   color: #fd5433;
-}
-
-.header__menu{
-  float: right;
 }
 
 .menu__list{
@@ -113,17 +110,12 @@ p{
   vertical-align: top;
 }
 
-.header__container:after{
-  content: "";
-  display: block;
-  clear: both;
-}
-
 .home-container{
   background-image: url("../images/Banner.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #999;
+  min-width: 798px;
 }
 
 .home__mask{
@@ -140,16 +132,21 @@ p{
   font-size: 120px;
 }
 
+.button{
+  font-family: Oswald, Arial;
+  background-color: #fd5433;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: inset 0 2px 10px -3px #fff;
+  cursor: pointer;
+}
+
 .home__link{
   box-sizing: border-box;
   margin: 56px auto 0;
   display: block;
-  font-family: Oswald, Arial;
   font-size: 32px;
-  background-color: #fd5433;
   border-radius: 5px;
-  font-weight: 700;
-  color: #fff;
   padding: 6px 58px;
   width: 282px;
   box-shadow: inset 0 2px 10px -3px #fff;
@@ -176,13 +173,14 @@ p{
 }
 
 .services__service{
-  display: inline-block;
   width: 29%;
-  margin-right: 6.1%;
 }
 
 .services__content{
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .services__service:last-child{
@@ -281,12 +279,11 @@ p{
 
 .about__tabs{
   margin-top: 60px;
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
 }
 
 .about__tab{
-  display: inline-block;
-  vertical-align: top;
   width: 20%;
   margin-right: 48px;
 }
@@ -327,24 +324,14 @@ p{
   padding-bottom: 45px;
 }
 
+.about__description{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .description__column{
-  display: inline-block;
-  vertical-align: top;
-}
-
-.description__info{
   width: 45%;
-}
-
-.description__skills{
-  width: 45%;
-  margin-left: 9%;
-}
-
-.about__description:after{
-  content: "";
-  display: block;
-  clear: both;
 }
 
 .description__title{
@@ -428,26 +415,26 @@ p{
 .posts__content{
   padding-top: 100px;
   padding-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.posts__column{
-  display: inline-block;
-  width: 48%;
-  vertical-align: top;
+.posts__post{
+  width: 50%;
 }
 
-.posts__column:not(:first-child){
-  margin-left: 20px;
+.posts__post:nth-child(2n){
+  margin-bottom: 90px;
+}
+
+.posts__post:last-child{
+  margin-bottom: 0;
 }
 
 .post__column{
   display: inline-block;
   width: 45%;
   vertical-align: top;
-}
-
-.posts__post:not(:last-child){
-  margin-bottom: 90px;
 }
 
 .post__content{
@@ -519,12 +506,13 @@ p{
 .contact__form{
   padding-top: 30px;
   padding-bottom: 85px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .contact-form__label{
-  display: inline-block;
-  vertical-align: top;
-  width: 47.3%;
+  width: 47%;
 }
 
 .contact-form__label:nth-child(2n){
@@ -558,10 +546,11 @@ p{
 
 .contact-form__input{
   padding: 20px 0 20px 20px;
-  width: 96%;
+  width: 100%;
   font-size: 20px;
   font-family: Arial;
   border: 0;
+  box-sizing: border-box;
 }
 
 .contact-form__input:hover{
@@ -578,17 +567,11 @@ p{
 
 .contact-form__button{
   margin-top: 22px;
-  background-color: #fd5433;
-  color: #fff;
-  font-weight: 700;
-  font-family: Oswald;
   font-size: 26px;
   padding-top: 10px;
   padding-bottom: 10px;
   border: none;
-  width: 98%;
-  cursor: pointer;
-  box-shadow: inset 0 2px 10px -3px #fff;
+  width: 100%;
 }
 
 .contact-form__button:hover{
