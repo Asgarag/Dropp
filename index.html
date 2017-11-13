@@ -10,63 +10,53 @@
 <body class="page">
   <header class="header">
     <div class="main-container header__container">
-      <h1 class="logotype">
-        DR<span class="logotype__char">O</span>PP
+      <h1 class="header__logotype title title_xl">
+        DR<span class="header__logotype-char">O</span>PP
       </h1>
-      <nav class="menu">
-        <ul class="menu__list">
-          <li class="menu__list-item">
-            <a class="menu__link" href="#home">HOME</a>
-          </li>
-          <li class="menu__list-item">
-            <a class="menu__link" href="#services">SERVICES</a>
-          </li>
-          <li class="menu__list-item">
-            <a class="menu__link" href="#portfolio">PORTFOLIO</a>
-          </li>
-          <li class="menu__list-item">
-            <a class="menu__link" href="#about">ABOUT</a>
-          </li>
-          <li class="menu__list-item">
-            <a class="menu__link" href="#posts">BLOG</a>
-          </li>
-          <li class="menu__list-item">
-            <a class="menu__link" href="#contact">CONTACT</a>
-          </li>
-        </ul>
+      <nav class="header__menu menu">
+        <a class="menu__link" href="#home">HOME</a>
+        <a class="menu__link" href="#services">SERVICES</a>
+        <a class="menu__link" href="#portfolio">PORTFOLIO</a>
+        <a class="menu__link" href="#about">ABOUT</a>
+        <a class="menu__link" href="#posts">BLOG</a>
+        <a class="menu__link" href="#contact">CONTACT</a>
       </nav>
     </div>
   </header>
   <div class="home" id="home">
-    <div class="main-container home__content">
-      <span class="home__text">COME,STAY FOR A COFFEE!</span>
-      <a class="home__link button" href="#0">HAVE A SEAT</a>
+    <div class="main-container">
+      <span class="home__text title">COME,STAY FOR A COFFEE!</span>
+      <div class="home__conteiner">
+        <a class="home__link button" href="#0">HAVE A SEAT</a>
+      </div>
     </div>
   </div>
-  <section class="services" id="services">
-    <div class="section-header section-header_border-bottom">
-      <h2 class="section-title main-container">SERVICES</h2>
+  <section class="services section" id="services">
+    <div class="section__header section__header_border-bottom">
+      <div class="main-container">
+        <h2 class="section__title title title_l">SERVICES</h2>
+      </div>
     </div>
     <div class="services__content main-container">
       <article class="services__service services__service_pen-icon">
-        <h3 class="services__service-title">BRANDING</h3>
-        <div class="service__content">
+        <h3 class="services__content-title title title_m">BRANDING</h3>
+        <div class="services__info">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
           </p>
         </div>
       </article>
       <article class="services__service services__service_pc-icon">
-        <h3 class="services__service-title">WEB DESIGN</h3>
-        <div class="service__content">
+        <h3 class="services__content-title title title_m">WEB DESIGN</h3>
+        <div class="services__info">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
           </p>
         </div>
       </article>
       <article class="services__service services__service_mic-icon">
-        <h3 class="services__service-title">MARKETING</h3>
-        <div class="service__content">
+        <h3 class="services__content-title title title_m">MARKETING</h3>
+        <div class="services__info">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
           </p>
@@ -74,9 +64,11 @@
       </article>
     </div>
   </section>
-  <section class="portfolio" id="portfolio">
-    <div class="section-header_border-top section-header">
-      <h2 class="section-title main-container">PORTFOLIO</h2>
+  <section class="portfolio section" id="portfolio">
+    <div class="section__header_border-top section__header">
+      <div class="main-container">
+        <h2 class="section__title title title_l">PORTFOLIO</h2>
+      </div>
     </div>
     <div class="portolio__content">
       <div class="portolio__image-conteiner">
@@ -117,9 +109,11 @@
       </div>
     </div>
   </section>
-  <section class="about" id="about">
-    <div class="section-header_border-bottom section-header">
-      <h2 class="section-title main-container">ABOUT US</h2>
+  <section class="about section" id="about">
+    <div class="section__header_border-bottom section__header">
+      <div class="main-container">
+        <h2 class="section__title title title_l">ABOUT US</h2>
+      </div>
     </div>
     <div class="about__content">
       <div class="about__tabs main-container">
@@ -138,8 +132,8 @@
       </div>
       <div class="about__info">
         <div class="main-container about__conteiner">
-          <div class="about__column">
-            <h3 class="about__name-title about-title">John Smith - Lead Graphic Artist</h3>
+          <div class="about__info-column">
+            <h3 class="about__info-title title title_s">John Smith - Lead Graphic Artist</h3>
             <div class="about__description">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
@@ -154,8 +148,8 @@
               <a class="about__social-link about__social-link_youtube" href="#">YouTube</a>
             </div>
           </div>
-          <div class="about__column">
-            <h4 class="about__group-title about-title">Skills</h4>
+          <div class="about__info-column">
+            <h4 class="about__info-title title title_s">Skills</h4>
             <div class="about__skills">
               <div class="about__skill-bar">
                 <span class="about__skill-bar-name text">PHOTOSHOP</span>
@@ -188,9 +182,11 @@
       </div>
     </div>
   </section>
-  <section class="posts" id="posts">
-    <div class="section-header section-header_border-bottom">
-      <h2 class="section-title main-container">LATEST POSTS</h2>
+  <section class="posts section" id="posts">
+    <div class="section__header section__header_border-bottom">
+      <div class="main-container">
+        <h2 class="section__title title title_l">LATEST POSTS</h2>
+      </div>
     </div>
     <div class="posts__content main-container">
       <article class="posts__post">
@@ -198,7 +194,7 @@
           <img class="posts__post-image" src="images/post1.png" alt="post's image">
         </a>
         <div class="post__content posts__post-column">
-          <h4 class="posts__post-title">
+          <h4 class="posts__post-title title title_s">
             <a class="posts__post-link" href="#0">SUMMER ADVENTURES...</a>
           </h4>
           <time class="posts__post-time" datetime="2013-12-14">POSTED: DEC 14 2013</time>
@@ -209,12 +205,12 @@
           </div>
         </div>
       </article>
-      <article class="post posts__post">
+      <article class="posts__post">
         <a class="posts__post-image-link posts__post-column" href="#0">
           <img class="posts__post-image" src="images/post2.png" alt="post's image">
         </a>
         <div class="post__content posts__post-column">
-          <h3 class="posts__post-title">
+          <h3 class="posts__post-title title title_s">
             <a class="posts__post-link" href="#0">HEROES: DECAT O REVI...</a>
           </h3>
           <time class="posts__post-time" datetime="2013-12-14">POSTED: DEC 14 2013</time>
@@ -225,12 +221,12 @@
           </div>
         </div>
       </article>
-      <article class="post posts__post">
+      <article class="posts__post">
         <a class="posts__post-image-link posts__post-column" href="#0">
           <img class="posts__post-image" src="images/post3.png" alt="post's image">
         </a>
         <div class="post__content posts__post-column">
-          <h4 class="posts__post-title">
+          <h4 class="posts__post-title title title_s">
             <a class="posts__post-link" href="#0">ROMANIAN FOLKLORE</a>
           </h4>
           <time class="posts__post-time" datetime="2013-12-14">POSTED: DEC 14 2013</time>
@@ -241,12 +237,12 @@
           </div>
         </div>
       </article>
-      <article class="post posts__post">
+      <article class="posts__post">
         <a class="posts__post-image-link posts__post-column" href="#0">
           <img class="posts__post-image" src="images/post4.png" alt="post's image">
         </a>
         <div class="post__content posts__post-column">
-          <h4 class="posts__post-title">
+          <h4 class="posts__post-title title title_s">
             <a class="posts__post-link" href="#0">WHAT’S ON DUBAI AND...</a>
           </h4>
           <time class="posts__post-time" datetime="2013-12-14">POSTED: DEC 14 2013</time>
@@ -259,21 +255,20 @@
       </article>
     </div>
   </section>
-  <section class="contact" id="contact">
-    <div class="section-header_border-top section-header">
-      <h2 class="section-title main-container">CONTACT US</h2>
+  <section class="contact section" id="contact">
+    <div class="section__header_border-top section__header">
+      <div class="main-container">
+        <h2 class="section__title title title_l">CONTACT US</h2>
+      </div>
     </div>
     <div class="contact__content">
-      <form class="contact-form contact__form main-container" method="post">
-        <label class="contact__form-label">
-						<input class="contact__form-input" type="text" name="name" placeholder="Your name here" required>
-					</label>
-        <label class="contact__form-label">
-						<input class="contact__form-input" type="email" name="email" placeholder="Email address here" required>
-					</label>
-        <label class="contact__form-label contact__form-label-contact">
-						<textarea class="contact__form-input contact__form-input-contact" name="contact" placeholder="Your contact here" required></textarea>
-					</label>
+      <form class="contact__form main-container" method="post">
+        <input class="contact__form-input" id="name" type="text" name="name" placeholder="Your name here" required>
+        <label class="contact__form-label" for="name">Name</label>
+        <input class="contact__form-input" id="email" type="email" name="email" placeholder="Email address here" required>
+        <label class="contact__form-label" for="email">Email</label>
+        <textarea class="contact__form-input contact__form-input-contact" id="contact" name="contact" placeholder="Your contact here" required></textarea>
+        <label class="contact__form-label" for="contact">Contact</label>
         <button class="contact__form-button button">SEND MESSAGE NOW</button>
       </form>
       <div class="contact__copyright">

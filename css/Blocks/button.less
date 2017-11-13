@@ -1,0 +1,24 @@
+.button{
+  font-family: "Oswald", Arial;
+  background-color: @color-orange;
+  font-weight: 700;
+  color: @color-white;
+  box-shadow: inset 0 2px 10px -3px @color-white;
+  cursor: pointer;
+  transition: .4s;
+  border: none;
+
+  &:active{
+    box-shadow: 0 2px 0 @color-dark-orange;
+    transform: translateY(3px);
+  }
+
+  &:hover{
+    background-color: @color-dark-orange;
+  }
+
+  &:focus{
+    background-color: @color-dark-orange;
+    outline: none;
+  }
+}

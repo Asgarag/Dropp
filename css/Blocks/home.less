@@ -1,0 +1,40 @@
+.home{
+  background-image: url("../images/Banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  min-height: 800px;
+  flex-flow: column;
+  justify-content: center;
+  text-align: center;
+  animation: appearance 2s;
+
+  &::before{
+    content: "";
+    background-color: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.home__text{
+  color: #fff;
+  font-size: 120px;
+  text-align: center;
+}
+
+.home__conteiner{
+  margin-top: 50px;
+}
+
+.home__link{
+  display: inline-block;
+  font-size: 32px;
+  border-radius: 5px;
+  padding: 6px 58px;
+  word-spacing: 10px;
+}

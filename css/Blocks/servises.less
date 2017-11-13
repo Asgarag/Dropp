@@ -1,0 +1,40 @@
+.services__service{
+  width: 29%;
+  position: relative;
+  margin-bottom: 30px;
+  text-align: center;
+
+  &::before{
+    background-repeat: no-repeat;
+    content: "";
+    background-size: cover;
+    display: inline-block;
+    padding-left: 50%;
+    padding-top: 50%;
+  }
+}
+
+.services__content{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.services__content-title{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.services__service_pen-icon::before{
+  background-image: url("../images/Pen_icon.png");
+}
+
+.services__service_pc-icon::before{
+  background-image: url("../images/PC_icon.png");
+}
+
+.services__service_mic-icon::before{
+  background-image: url("../images/Mic_icon.png");
+}

@@ -1,0 +1,69 @@
+@color-white: #fff;
+@color-black: #3d3c3c;
+@color-gray: #686868;
+@color-dark-orange: #d22301;
+@color-orange: #fd5433;
+
+@font-face{
+  font-family: Oswald;
+  font-weight: 400;
+  src: url("../fonts/Oswald-Regular.woff2") format("woff2"), url("../fonts/Oswald-Regular.woff") format("woff");
+}
+
+@font-face{
+  font-family: Oswald;
+  font-weight: 700;
+  src: url("../fonts/Oswald-Bold.woff2") format("woff2"), url("../fonts/Oswald-Bold.woff") format("woff");
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+p{
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+p:last-child{
+  margin-bottom: 0;
+}
+
+.page{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: @color-white;
+  margin: 0;
+  color: @color-black;
+  min-width: 798px;
+}
+
+@keyframes appearance{
+
+  from{
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+   }
+
+@import "blocks/title.less";
+@import "blocks/button.less";
+@import "blocks/about.less";
+@import "blocks/contact.less";
+@import "blocks/header.less";
+@import "blocks/home.less";
+@import "blocks/main-conteiner.less";
+@import "blocks/menu.less";
+@import "blocks/portfolio.less";
+@import "blocks/posts.less";
+@import "blocks/section.less";
+@import "blocks/servises.less";

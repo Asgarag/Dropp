@@ -1,0 +1,142 @@
+.about__content{
+  margin-top: 60px;
+}
+
+.about__tabs{
+  display: flex;
+  justify-content: space-around;
+}
+
+.about__tab{
+  width: 20%;
+  margin-right: 48px;
+}
+
+.about__image:hover{
+  opacity: .5;
+  transition-duration: .4s;
+}
+
+.about__tab:last-child{
+  margin-right: 0;
+}
+
+.about__tab_active{
+  position: relative;
+
+  &::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -90px;
+    transform: translateX(-50%);
+    border: 28px solid transparent;
+    border-bottom-width: 0;
+    border-top: 40px solid @color-white;
+  }
+}
+
+.about__info{
+  margin-top: 60px;
+  background-color: @color-orange;
+  color: @color-white;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.about__conteiner{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about__info-column{
+  width: 45%;
+}
+
+.about__info-title{
+  margin-bottom: 45px;
+}
+
+.about__social-links{
+  margin-top: 40px;
+}
+
+.about__social-link:not(:last-child){
+  margin-right: 15px;
+}
+
+.about__social-link{
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+
+  &:hover{
+    opacity: .5;
+  }
+
+  &:focus{
+    opacity: .5;
+    outline: 0;
+  }
+}
+
+.about__social-link_fb{
+  background-image: url("../images/facebook.svg");
+}
+
+.about__social-link_g{
+  background-image: url("../images/google+.svg");
+}
+
+.about__social-link_vim{
+  background-image: url("../images/vimeo.svg");
+}
+
+.about__social-link_dr{
+  background-image: url("../images/dribbble.svg");
+}
+
+.about__social-link_youtube{
+  background-image: url("../images/youTube.svg");
+}
+
+.about__skill-bar:not(:last-child){
+  margin-bottom: 10px;
+}
+
+.about__skill-bar{
+  display: flex;
+}
+
+.about__skill-bar-name{
+  width: 36%;
+}
+
+.about__skill-bar-progress{
+  width: 50%;
+  height: 10px;
+  background-color: #fd5433;
+  color: #fff;
+  align-self: center;
+}
+
+.about__skill-bar-progress[value]::-webkit-progress-bar{
+  background-color: #fd5433;
+}
+
+.about__skill-bar-progress[value]::-webkit-progress-value{
+  background-color: #fff;
+}
+
+.about__skill-bar-progress[value]::-moz-progress-bar{
+  background-color: #fff;
+}
+
+.about__skill-bar-value{
+  margin-left: 10px;
+}

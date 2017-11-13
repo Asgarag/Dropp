@@ -1,0 +1,82 @@
+.contact__content{
+  background-color: @color-gray;
+  background-image: url("../images/bgcity.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact__form{
+  padding-top: 30px;
+  padding-bottom: 85px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact__form-label{
+  position: absolute;
+  top: -9999px;
+}
+
+.contact__form-input{
+  padding: 20px;
+  width: 47%;
+  font-size: 20px;
+  border: 0;
+  box-sizing: border-box;
+
+  &::-moz-placeholder{
+    color: @color-orange;
+  }
+
+  &::-webkit-input-placeholder{
+    color: @color-orange;
+  }
+
+  &::-ms-input-placeholder{
+    color: @color-orange;
+  }
+
+  &::placeholder{
+    color: @color-orange;
+  }
+
+  &:hover{
+    outline: 2px solid @color-orange;
+  }
+
+  &:focus{
+    outline: 2px solid @color-orange;
+  }
+}
+
+.contact__form-input-contact{
+  min-height: 220px;
+  font-family: Arial;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.contact__form-button{
+  margin-top: 22px;
+  font-size: 26px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  width: 100%;
+}
+
+.contact__copyright{
+  border-top: 1px solid @color-white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.contact__copyright-text{
+  font-size: 18px;
+  color: #fff;
+}
+
+.contact__copyright-text-name{
+  font-weight: 700;
+}
