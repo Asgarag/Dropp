@@ -32,14 +32,14 @@
     transform: translateX(-50%);
     border: 28px solid transparent;
     border-bottom-width: 0;
-    border-top: 40px solid @color-white;
+    border-top: 40px solid @background-color;
   }
 }
 
 .about__info{
   margin-top: 60px;
-  background-color: @color-orange;
-  color: @color-white;
+  background-color: @main-color;
+  color: @about-text;
   padding-top: 45px;
   padding-bottom: 45px;
 }
@@ -56,6 +56,7 @@
 
 .about__info-title{
   margin-bottom: 45px;
+  text-transform: none;
 }
 
 .about__social-links{
@@ -115,26 +116,28 @@
 
 .about__skill-bar-name{
   width: 36%;
+  text-transform: uppercase;
 }
 
 .about__skill-bar-progress{
   width: 50%;
   height: 10px;
-  background-color: #fd5433;
-  color: #fff;
+  background-color: @main-color;
+  color: @about-text;
   align-self: center;
+  border: none;
 }
 
 .about__skill-bar-progress[value]::-webkit-progress-bar{
-  background-color: #fd5433;
+  background-color: @main-color;
 }
 
 .about__skill-bar-progress[value]::-webkit-progress-value{
-  background-color: #fff;
+  background-color: @about-text;
 }
 
 .about__skill-bar-progress[value]::-moz-progress-bar{
-  background-color: #fff;
+  background-color: @about-text;
 }
 
 .about__skill-bar-value{

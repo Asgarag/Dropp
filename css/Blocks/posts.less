@@ -37,11 +37,11 @@
 }
 
 .posts__post-link:hover{
-  color: @color-orange;
+  color: @main-color;
 }
 
 .posts__post-link:focus{
-  outline: 1px solid @color-orange;
+  outline: 1px solid @main-color;
 }
 
 .posts__post-image-link{
@@ -53,14 +53,14 @@
   }
 
   &:focus{
-    outline: 1px solid @color-orange;
+    outline: 1px solid @main-color;
   }
 }
 
 .posts__post-time{
   font-size: 15px;
   font-weight: 700;
-  color: @color-gray;
+  color: @time-color;
   padding-bottom: 5px;
   position: relative;
   font-family: Oswald;
@@ -68,7 +68,7 @@
   &::after{
     content: "";
     position: absolute;
-    border-bottom: 5px solid @color-orange;
+    border-bottom: 5px solid @main-color;
     left: 0;
     bottom: -5px;
     width: 60%;

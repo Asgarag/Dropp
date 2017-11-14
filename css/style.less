@@ -1,8 +1,14 @@
-@color-white: #fff;
-@color-black: #3d3c3c;
-@color-gray: #686868;
-@color-dark-orange: #d22301;
-@color-orange: #fd5433;
+@background-color: #fff;
+@hover-link-color: #fff;
+@button-text-color: #fff;
+@about-text: #fff;
+@text-color: #3d3c3c;
+@time-color: #686868;
+@hover-background-color: #d22301;
+@title-color: #d22301;
+@main-color: #fd5433;
+@section-border-color: #3d3c3c;
+@mask-color: #000;
 
 @font-face{
   font-family: Oswald;
@@ -38,32 +44,21 @@ p:last-child{
 .page{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
-  background-color: @color-white;
+  background-color: @background-color;
   margin: 0;
-  color: @color-black;
+  color: @text-color;
   min-width: 798px;
 }
 
-@keyframes appearance{
-
-  from{
-    opacity: 0;
-  }
-
-  to{
-    opacity: 1;
-  }
-   }
-
-@import "blocks/title.less";
-@import "blocks/button.less";
-@import "blocks/about.less";
-@import "blocks/contact.less";
 @import "blocks/header.less";
-@import "blocks/home.less";
-@import "blocks/main-conteiner.less";
 @import "blocks/menu.less";
-@import "blocks/portfolio.less";
-@import "blocks/posts.less";
+@import "blocks/title.less";
+@import "blocks/main-conteiner.less";
+@import "blocks/home.less";
+@import "blocks/button.less";
 @import "blocks/section.less";
 @import "blocks/servises.less";
+@import "blocks/portfolio.less";
+@import "blocks/about.less";
+@import "blocks/contact.less";
+@import "blocks/posts.less";
