@@ -10,7 +10,6 @@
 }
 a {
   text-decoration: none;
-  color: inherit;
 }
 img {
   max-width: 100%;
@@ -23,13 +22,12 @@ p {
 p:last-child {
   margin-bottom: 0;
 }
-.page {
+body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   background-color: #fff;
   margin: 0;
   color: #3d3c3c;
-  min-width: 798px;
 }
 .header__container {
   display: -webkit-box;
@@ -49,6 +47,9 @@ p:last-child {
 .header__logotype-char {
   color: #fd5433;
 }
+.header {
+  min-width: 798px;
+}
 .menu__link {
   display: inline-block;
   vertical-align: top;
@@ -59,6 +60,7 @@ p:last-child {
   transition: 0.5s ease-out;
   font-family: Oswald;
   text-transform: uppercase;
+  color: inherit;
 }
 .menu__link:hover {
   background-color: #fd5433;
@@ -110,6 +112,7 @@ p:last-child {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  min-width: 798px;
 }
 .home::before {
   content: "";
@@ -169,12 +172,14 @@ p:last-child {
 .section__header {
   padding-top: 25px;
   padding-bottom: 25px;
-}
-.section__header_border-bottom {
   border-bottom: 1px solid #3d3c3c;
 }
-.section__header_border-top {
-  border-top: 1px solid #3d3c3c;
+.section__content {
+  border-bottom: 1px solid #3d3c3c;
+}
+.section {
+  min-width: 798px;
+  margin-bottom: 25px;
 }
 .services__service {
   width: 29%;
@@ -467,6 +472,7 @@ p:last-child {
 .posts__post-link {
   -webkit-transition: color .5s;
   transition: color .5s;
+  color: inherit;
 }
 .posts__post-link:hover {
   color: #fd5433;

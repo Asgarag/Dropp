@@ -6,12 +6,18 @@
 .section__header{
   padding-top: 25px;
   padding-bottom: 25px;
-}
-
-.section__header_border-bottom{
   border-bottom: 1px solid @section-border-color;
 }
 
-.section__header_border-top{
-  border-top: 1px solid @section-border-color;
+.section__content{
+  border-bottom: 1px solid @section-border-color;
+}
+
+.section{
+  min-width: 798px;
+  margin-bottom: 25px;
+  
+  &:last-child{
+    margin-bottom: 0;
+  }
 }
