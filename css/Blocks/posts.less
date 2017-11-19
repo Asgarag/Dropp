@@ -1,53 +1,78 @@
+@media screen and (max-width: 768px){
+
+  .posts__post{
+    width: 100%;
+
+    &:not(:last-child){
+      margin-bottom: 2rem;
+    }
+  }
+
+  .posts__post-column:first-child{
+    margin-right: 3rem;
+  }
+}
+
+@media screen and (min-width: 769px){
+
+  .posts__post{
+    width: 47%;
+    margin-top: 9rem;
+
+    &:first-child{
+      margin-top: 0;
+    }
+
+    &:nth-child(2){
+      margin-top: 0;
+    }
+
+    &:nth-child(2n){
+      margin-left: 4.5rem;
+    }
+  }
+
+  .posts__post-column:first-child{
+    margin-right: 5rem;
+  }
+}
+
 .posts__content{
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   display: flex;
   flex-wrap: wrap;
 }
 
 .posts__post{
-  width: 50%;
   display: flex;
-  justify-content: space-around;
   align-items: flex-start;
 }
 
-.posts__post:first-child{
-  margin-top: 0;
-}
-
-.posts__post:nth-child(2){
-  margin-top: 0;
-}
-
-.posts__post{
-  margin-top: 90px;
-}
-
 .posts__post-column{
-  width: 43%;
+  width: 45%;
 }
 
 .posts__post-title{
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 .posts__post-link{
   transition: color .5s;
   color: inherit;
+
+  &:hover{
+    color: @main-color;
+  }
+
+  &:focus{
+    outline: 1px solid @main-color;
+  }
 }
 
-.posts__post-link:hover{
-  color: @main-color;
-}
-
-.posts__post-link:focus{
-  outline: 1px solid @main-color;
-}
-
-.posts__post-image-link{
+.posts__post-image{
   transition: opacity .5s;
-  margin-top: 8px;
+  margin-top: .8rem;
 
   &:hover{
     opacity: .4;
@@ -59,7 +84,7 @@
 }
 
 .posts__post-time{
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 700;
   color: @time-color;
   padding-bottom: 5px;
@@ -77,6 +102,6 @@
 }
 
 .posts__post-text{
-  margin-top: 35px;
+  margin-top: 3.5rem;
   margin-bottom: 0;
 }

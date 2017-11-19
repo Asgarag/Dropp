@@ -2,6 +2,8 @@
 @hover-link-color: #fff;
 @button-text-color: #fff;
 @about-text: #fff;
+@home-text-color: #fff;
+@contact-copyright-color: #fff;
 @text-color: #3d3c3c;
 @time-color: #686868;
 @hover-background-color: #d22301;
@@ -22,6 +24,27 @@
   src: url("../fonts/Oswald-Bold.woff2") format("woff2"), url("../fonts/Oswald-Bold.woff") format("woff");
 }
 
+@media screen and (min-width: 1201px){
+
+  html{
+    font-size: 62.5%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px){
+
+  html{
+    font-size: 58%;
+  }
+}
+
+@media screen and (max-width: 768px){
+
+  html{
+    font-size: 50%;
+  }
+}
+
 a{
   text-decoration: none;
 }
@@ -33,7 +56,7 @@ img{
 
 p{
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 p:last-child{
@@ -42,7 +65,7 @@ p:last-child{
 
 body{
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 1.6rem;
   background-color: @background-color;
   margin: 0;
   color: @text-color;

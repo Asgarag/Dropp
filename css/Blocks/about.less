@@ -1,15 +1,61 @@
+@media screen and (min-width: 769px){
+
+  .about__tab{
+    width: 20%;
+  }
+
+  .about__tab_active{
+    position: relative;
+
+    &::after{
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -90px;
+      transform: translateX(-50%);
+      border: 28px solid transparent;
+      border-bottom-width: 0;
+      border-top: 40px solid @background-color;
+    }
+  }
+
+  .about__info-column{
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 768px){
+
+  .about__tab{
+    width: 40%;
+    margin-top: 2rem;
+
+    &:nth-child(1), &:nth-child(2){
+      margin-top: 0;
+    }
+
+    &:nth-child(2n){
+      margin-left: 2rem;
+    }
+  }
+
+  .about__info-column{
+    width: 100%;
+
+    &:last-child{
+      margin-top: 2rem;
+    }
+  }
+}
+
 .about__content{
-  margin-top: 60px;
+  margin-top: 6rem;
 }
 
 .about__tabs{
   display: flex;
   justify-content: space-around;
-}
-
-.about__tab{
-  width: 20%;
-  margin-right: 48px;
+  flex-wrap: wrap;
 }
 
 .about__image:hover{
@@ -21,27 +67,12 @@
   margin-right: 0;
 }
 
-.about__tab_active{
-  position: relative;
-
-  &::after{
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: -90px;
-    transform: translateX(-50%);
-    border: 28px solid transparent;
-    border-bottom-width: 0;
-    border-top: 40px solid @background-color;
-  }
-}
-
 .about__info{
-  margin-top: 60px;
+  margin-top: 6rem;
   background-color: @main-color;
   color: @about-text;
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
 }
 
 .about__conteiner{
@@ -50,21 +81,17 @@
   flex-wrap: wrap;
 }
 
-.about__info-column{
-  width: 45%;
-}
-
 .about__info-title{
-  margin-bottom: 45px;
+  margin-bottom: 4.5rem;
   text-transform: none;
 }
 
 .about__social-links{
-  margin-top: 40px;
+  margin-top: 4rem;
 }
 
 .about__social-link:not(:last-child){
-  margin-right: 15px;
+  margin-right: 1.5rem;
 }
 
 .about__social-link{
@@ -107,7 +134,7 @@
 }
 
 .about__skill-bar:not(:last-child){
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 .about__skill-bar{
@@ -141,5 +168,5 @@
 }
 
 .about__skill-bar-value{
-  margin-left: 10px;
+  margin-left: 5%;
 }
