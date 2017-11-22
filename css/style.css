@@ -124,7 +124,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .home__title {
-    font-size: 6rem;
+    font-size: 8rem;
   }
   .home {
     min-height: 55rem;
@@ -161,6 +161,7 @@ body {
 .home__title {
   color: #fff;
   text-align: center;
+  font-weight: 400;
 }
 .home__conteiner {
   margin-top: 5rem;
@@ -222,7 +223,7 @@ body {
 @media screen and (min-width: 1201px) {
   .services__service {
     width: 29%;
-    padding-top: 17rem;
+    background-size: 55%;
   }
   .services__content {
     -webkit-box-pack: justify;
@@ -233,7 +234,7 @@ body {
 @media screen and (min-width: 769px) and (max-width: 1200px) {
   .services__service {
     width: 30%;
-    padding-top: 19rem;
+    background-size: 60% 50%;
   }
   .services__content {
     -webkit-box-pack: justify;
@@ -250,7 +251,7 @@ body {
   .services__service {
     width: 70%;
     margin-bottom: 4rem;
-    padding-top: 22rem;
+    background-size: 50% 50%;
   }
   .services__service:last-child {
     margin-bottom: 0;
@@ -260,6 +261,7 @@ body {
   text-align: center;
   background-repeat: no-repeat;
   background-position-x: center;
+  padding-top: 17rem;
 }
 .services__content {
   padding-top: 5rem;
@@ -275,13 +277,13 @@ body {
   margin-bottom: 3rem;
 }
 .services__service_pen-icon {
-  background-image: url("../images/Pen_icon.png");
+  background-image: url("../images/pen.svg");
 }
 .services__service_pc-icon {
-  background-image: url("../images/PC_icon.png");
+  background-image: url("../images/desktop.svg");
 }
 .services__service_mic-icon {
-  background-image: url("../images/Mic_icon.png");
+  background-image: url("../images/mic.svg");
 }
 @media screen and (max-width: 768px) {
   .portolio__image-conteiner {
@@ -462,20 +464,18 @@ body {
   margin-left: 5%;
 }
 @media screen and (min-width: 769px) {
-  .contact__form-input {
-    padding: 2rem;
+  .contact__form-row {
     width: 47%;
   }
-  .contact__form-input-contact {
+  .contact__form-row-contact {
     margin-top: 2rem;
   }
 }
 @media screen and (max-width: 768px) {
-  .contact__form-input {
-    padding: 2rem;
+  .contact__form-row {
     width: 100%;
   }
-  .contact__form-input:not(:last-child) {
+  .contact__form-row:not(:last-child) {
     margin-bottom: 2rem;
   }
 }
@@ -496,15 +496,13 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.contact__form-label {
-  position: absolute;
-  top: -9999px;
-}
 .contact__form-input {
   font-size: 2rem;
   border: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  padding: 2rem;
+  width: 100%;
 }
 .contact__form-input::-webkit-input-placeholder {
   color: #fd5433;
@@ -526,8 +524,14 @@ body {
 }
 .contact__form-input-contact {
   min-height: 22rem;
-  width: 100%;
   font-family: Arial;
+}
+.contact__form-row-contact {
+  width: 100%;
+}
+.contact__form-hint {
+  position: absolute;
+  left: -9999px;
 }
 .contact__form-button {
   margin-top: 2rem;

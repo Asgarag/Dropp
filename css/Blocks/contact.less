@@ -1,11 +1,10 @@
 @media screen and (min-width: 769px){
 
-  .contact__form-input{
-    padding: 2rem;
+  .contact__form-row{
     width: 47%;
   }
 
-  .contact__form-input-contact{
+  .contact__form-row-contact{
     margin-top: 2rem;
   }
 }
@@ -13,8 +12,7 @@
 
 @media screen and (max-width: 768px){
 
-  .contact__form-input{
-    padding: 2rem;
+  .contact__form-row{
     width: 100%;
 
     &:not(:last-child){
@@ -37,15 +35,12 @@
   flex-wrap: wrap;
 }
 
-.contact__form-label{
-  position: absolute;
-  top: -9999px;
-}
-
 .contact__form-input{
   font-size: 2rem;
   border: 0;
   box-sizing: border-box;
+  padding: 2rem;
+  width: 100%;
 
   &::-moz-placeholder{
     color: @main-color;
@@ -74,8 +69,16 @@
 
 .contact__form-input-contact{
   min-height: 22rem;
-  width: 100%;
   font-family: Arial;
+}
+
+.contact__form-row-contact{
+  width: 100%;
+}
+
+.contact__form-hint{
+  position: absolute;
+  left: -9999px;
 }
 
 .contact__form-button{

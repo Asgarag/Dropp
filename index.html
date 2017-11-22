@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dropp</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
+  <script src="scripts/placeholder.js"></script>
 </head>
 
 <body class="page">
@@ -268,12 +269,18 @@
     </div>
     <div class="contact__content section__content">
       <form class="contact__form main-container" method="post">
-        <input class="contact__form-input" id="name" type="text" name="name" placeholder="Your name here" required>
-        <label class="contact__form-label" for="name">Name</label>
-        <input class="contact__form-input" id="email" type="email" name="email" placeholder="Email address here" required>
-        <label class="contact__form-label" for="email">Email</label>
-        <textarea class="contact__form-input contact__form-input-contact" id="contact" name="contact" placeholder="Your contact here" required></textarea>
-        <label class="contact__form-label" for="contact">Contact</label>
+        <div class="contact__form-row">
+          <input class="contact__form-input" type="text" name="name" placeholder="Your name here" required>
+          <label class="contact__form-hint">Your name here</label>
+        </div>
+        <div class="contact__form-row">
+          <input class="contact__form-input" type="email" name="email" placeholder="Email address here" required>
+          <label class="contact__form-hint">Email address here</label>
+        </div>
+        <div class="contact__form-row-contact">
+          <textarea class="contact__form-input contact__form-input-contact" name="contact" placeholder="Your contact here" required></textarea>
+          <label class="contact__form-hint">Your contact here</label>
+        </div>
         <button class="contact__form-button button">Send messege now</button>
       </form>
       <div class="contact__copyright">
