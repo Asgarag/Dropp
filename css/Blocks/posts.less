@@ -1,23 +1,21 @@
 @media screen and (max-width: 768px){
 
-  .posts__post{
-    width: 100%;
-
-    &:not(:last-child){
-      margin-bottom: 2rem;
-    }
+  .posts__post:not(:last-child){
+    margin-bottom: 8rem;
   }
 
-  .posts__post-column:first-child{
-    margin-right: 3rem;
+  .posts__content{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 }
 
 @media screen and (min-width: 769px){
 
   .posts__post{
-    width: 47%;
+    width: 48%;
     margin-top: 9rem;
+    display: flex;
 
     &:first-child{
       margin-top: 0;
@@ -28,80 +26,17 @@
     }
 
     &:nth-child(2n){
-      margin-left: 4.5rem;
+      margin-left: 3rem;
     }
   }
 
-  .posts__post-column:first-child{
-    margin-right: 5rem;
-  }
-}
-
-.posts__content{
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.posts__post{
-  display: flex;
-  align-items: flex-start;
-}
-
-.posts__post-column{
-  width: 45%;
-}
-
-.posts__post-title{
-  margin-bottom: 1rem;
-}
-
-.posts__post-link{
-  transition: color .5s;
-  color: inherit;
-
-  &:hover{
-    color: @main-color;
+  .posts__content{
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  &:focus{
-    outline: 1px solid @main-color;
+  .posts__content{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
-}
-
-.posts__post-image{
-  transition: opacity .5s;
-  margin-top: .8rem;
-
-  &:hover{
-    opacity: .4;
-  }
-
-  &:focus{
-    outline: 1px solid @main-color;
-  }
-}
-
-.posts__post-time{
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: @time-color;
-  padding-bottom: 5px;
-  position: relative;
-  font-family: Oswald;
-
-  &::after{
-    content: "";
-    position: absolute;
-    border-bottom: 5px solid @main-color;
-    left: 0;
-    bottom: -5px;
-    width: 60%;
-  }
-}
-
-.posts__post-text{
-  margin-top: 3.5rem;
-  margin-bottom: 0;
 }

@@ -1,0 +1,37 @@
+.about__skill-bar:not(:last-child){
+  margin-bottom: 1rem;
+}
+
+.about__skill-bar{
+  display: flex;
+}
+
+.bar__name{
+  width: 36%;
+  text-transform: uppercase;
+}
+
+.bar__progress{
+  width: 50%;
+  height: 10px;
+  background-color: @main-color;
+  color: @about-text;
+  align-self: center;
+  border: none;
+}
+
+.bar__progress[value]::-webkit-progress-bar{
+  background-color: @main-color;
+}
+
+.bar__progress[value]::-webkit-progress-value{
+  background-color: @about-text;
+}
+
+.bar__progress[value]::-moz-progress-bar{
+  background-color: @about-text;
+}
+
+.bar__value{
+  margin-left: 5%;
+}

@@ -1,42 +1,50 @@
-@media screen and (min-width: 1201px){
-
-  .services__service{
-    width: 29%;
-    background-size: 55%;
-  }
-
-  .services__content{
-    justify-content: space-between;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1200px){
+@media screen and (min-width: 769px){
 
   .services__service{
     width: 30%;
-    background-size: 60% 50%;
+
+    &:not(:last-child){
+      margin-right: 5%;
+    }
+
+    &::before{
+      padding-left: 50%;
+      padding-top: 50%;
+    }
   }
 
   .services__content{
-    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .services__name-title{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 }
 
-
 @media screen and (max-width: 768px){
 
-  .services__content{
-    justify-content: center;
-  }
-
   .services__service{
-    width: 70%;
-    margin-bottom: 4rem;
-    background-size: 50% 50%;
+    width: 80%;
+    margin-bottom: 8rem;
+    margin-left: auto;
+    margin-right: auto;
 
     &:last-child{
       margin-bottom: 0;
     }
+
+    &::before{
+      padding-left: 30%;
+      padding-top: 30%;
+    }
+  }
+
+  .services__name-title{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -44,29 +52,28 @@
   text-align: center;
   background-repeat: no-repeat;
   background-position-x: center;
-  padding-top: 17rem;
+
+  &::before{
+    background-repeat: no-repeat;
+    content: "";
+    background-size: cover;
+    display: inline-block;
+  }
 }
 
 .services__content{
   padding-top: 5rem;
   padding-bottom: 5rem;
-  display: flex;
-  flex-wrap: wrap;
 }
 
-.services__name-title{
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-
-.services__service_pen-icon{
+.services__service_pen-icon::before{
   background-image: url("../images/pen.svg");
 }
 
-.services__service_pc-icon{
+.services__service_pc-icon::before{
   background-image: url("../images/desktop.svg");
 }
 
-.services__service_mic-icon{
+.services__service_mic-icon::before{
   background-image: url("../images/mic.svg");
 }

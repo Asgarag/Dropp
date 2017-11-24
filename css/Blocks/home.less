@@ -7,16 +7,24 @@
   .home{
     min-height: 80rem;
   }
+
+  .home__link{
+    padding: .6rem 5.8rem;
+  }
 }
 
 @media screen and (max-width: 768px){
 
   .home__title{
-    font-size: 8rem;
+    font-size: 6rem;
   }
 
   .home{
     min-height: 55rem;
+  }
+
+  .home__link{
+    padding: .5rem 4rem;
   }
 }
 
@@ -47,16 +55,17 @@
   color: @home-text-color;
   text-align: center;
   font-weight: 400;
+  position: relative;
 }
 
 .home__conteiner{
   margin-top: 5rem;
+  position: relative;
 }
 
 .home__link{
   display: inline-block;
   font-size: 3.2rem;
   border-radius: .5rem;
-  padding: .6rem 5.8rem;
   word-spacing: 1rem;
 }

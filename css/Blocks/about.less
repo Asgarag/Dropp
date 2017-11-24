@@ -19,8 +19,22 @@
     }
   }
 
-  .about__info-column{
+  .about__info-inner{
     width: 45%;
+  }
+
+  .about__container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .about__info-title{
+    margin-bottom: 4.5rem;
+  }
+
+  .about__social-links{
+    margin-top: 4rem;
   }
 }
 
@@ -39,12 +53,20 @@
     }
   }
 
-  .about__info-column{
+  .about__info-inner{
     width: 100%;
 
     &:last-child{
-      margin-top: 2rem;
+      margin-top: 4rem;
     }
+  }
+
+  .about__info-title{
+    margin-bottom: 3rem;
+  }
+
+  .about__social-links{
+    margin-top: 2rem;
   }
 }
 
@@ -75,19 +97,8 @@
   padding-bottom: 4.5rem;
 }
 
-.about__conteiner{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
 .about__info-title{
-  margin-bottom: 4.5rem;
   text-transform: none;
-}
-
-.about__social-links{
-  margin-top: 4rem;
 }
 
 .about__social-link:not(:last-child){
@@ -131,42 +142,4 @@
 
 .about__social-link_youtube{
   background-image: url("../images/youTube.svg");
-}
-
-.about__skill-bar:not(:last-child){
-  margin-bottom: 1rem;
-}
-
-.about__skill-bar{
-  display: flex;
-}
-
-.about__skill-bar-name{
-  width: 36%;
-  text-transform: uppercase;
-}
-
-.about__skill-bar-progress{
-  width: 50%;
-  height: 10px;
-  background-color: @main-color;
-  color: @about-text;
-  align-self: center;
-  border: none;
-}
-
-.about__skill-bar-progress[value]::-webkit-progress-bar{
-  background-color: @main-color;
-}
-
-.about__skill-bar-progress[value]::-webkit-progress-value{
-  background-color: @about-text;
-}
-
-.about__skill-bar-progress[value]::-moz-progress-bar{
-  background-color: @about-text;
-}
-
-.about__skill-bar-value{
-  margin-left: 5%;
 }
