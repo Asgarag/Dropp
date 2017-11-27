@@ -1,6 +1,6 @@
 @media screen and (min-width: 769px){
 
-  .home__title{
+  .home__slogan{
     font-size: 12rem;
   }
 
@@ -15,7 +15,7 @@
 
 @media screen and (max-width: 768px){
 
-  .home__title{
+  .home__slogan{
     font-size: 6rem;
   }
 
@@ -41,7 +41,7 @@
 
   &::before{
     content: "";
-    background-color: @mask-color;
+    background-color: @gray-color;
     opacity: .4;
     width: 100%;
     height: 100%;
@@ -51,16 +51,19 @@
   }
 }
 
-.home__title{
-  color: @home-text-color;
+.home__slogan{
+  color: @white-color;
   text-align: center;
-  font-weight: 400;
+  font-family: Oswald;
+  text-transform: uppercase;
+}
+
+.home__container{
   position: relative;
 }
 
-.home__conteiner{
+.home__inner{
   margin-top: 5rem;
-  position: relative;
 }
 
 .home__link{

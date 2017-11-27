@@ -1,16 +1,8 @@
-@background-color: #fff;
-@hover-link-color: #fff;
-@button-text-color: #fff;
-@about-text: #fff;
-@home-text-color: #fff;
-@contact-copyright-color: #fff;
-@text-color: #3d3c3c;
-@time-color: #686868;
-@hover-background-color: #d22301;
-@title-color: #d22301;
+@white-color: #fff;
+@black-color: #3d3c3c;
+@gray-color: #686868;
+@additional-color: #d22301;
 @main-color: #fd5433;
-@section-border-color: #3d3c3c;
-@mask-color: #000;
 
 @font-face{
   font-family: Oswald;
@@ -66,15 +58,15 @@ p:last-child{
 body{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
-  background-color: @background-color;
+  background-color: @white-color;
   margin: 0;
-  color: @text-color;
+  color: @black-color;
 }
 
 @import "blocks/header.less";
 @import "blocks/menu.less";
 @import "blocks/title.less";
-@import "blocks/main-conteiner.less";
+@import "blocks/main-container.less";
 @import "blocks/home.less";
 @import "blocks/button.less";
 @import "blocks/section.less";

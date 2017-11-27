@@ -7,6 +7,14 @@
       margin-top: 3rem;
     }
   }
+
+  .post__time::after{
+    border-bottom: 2px solid @main-color;
+  }
+
+  .post__text{
+    margin-top: 3rem;
+  }
 }
 
 @media screen and (min-width: 769px){
@@ -21,6 +29,14 @@
 
   .post__image{
     margin-top: .8rem;
+  }
+
+  .post__time::after{
+    border-bottom: 5px solid @main-color;
+  }
+
+  .post__text{
+    margin-top: 2.5rem;
   }
 }
 
@@ -56,7 +72,7 @@
 .post__time{
   font-size: 1.5rem;
   font-weight: 700;
-  color: @time-color;
+  color: @gray-color;
   padding-bottom: 5px;
   position: relative;
   font-family: Oswald;
@@ -64,7 +80,6 @@
   &::after{
     content: "";
     position: absolute;
-    border-bottom: 5px solid @main-color;
     left: 0;
     bottom: -5px;
     width: 60%;
@@ -72,6 +87,5 @@
 }
 
 .post__text{
-  margin-top: 2.5rem;
   margin-bottom: 0;
 }

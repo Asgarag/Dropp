@@ -7,6 +7,14 @@
   .header__logotype{
     font-size: 5rem;
   }
+
+  .header__menu{
+    display: none;
+  }
+
+  #switch:checked ~ .header__menu{
+    display: block;
+  }
 }
 
 @media screen and (min-width: 769px){
@@ -14,6 +22,36 @@
   .header__logotype{
     font-size: 7rem;
   }
+
+  .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: @white-color;
+    width: 100%;
+    border: 1px solid @black-color;
+  }
+
+  .header__switch-label{
+    display: none;
+  }
+}
+
+.header__switch-label{
+  background-image: url("../images/hamburger_icon.svg");
+  background-repeat: no-repeat;
+  width: 4.5rem;
+  height: 4rem;
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.header__checkbox{
+  position: absolute;
+  left: -9999px;
 }
 
 .header__container{
