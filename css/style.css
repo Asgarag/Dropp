@@ -54,9 +54,6 @@ body {
   .header__menu {
     display: none;
   }
-  #switch:checked ~ .header__menu {
-    display: block;
-  }
 }
 @media screen and (min-width: 769px) {
   .header__logotype {
@@ -71,11 +68,11 @@ body {
     width: 100%;
     border: 1px solid #3d3c3c;
   }
-  .header__switch-label {
+  .header__switch {
     display: none;
   }
 }
-.header__switch-label {
+.header__switch {
   background-image: url("../images/hamburger_icon.svg");
   background-repeat: no-repeat;
   width: 4.5rem;
@@ -360,33 +357,26 @@ body {
   opacity: .4;
 }
 @media screen and (min-width: 769px) {
+  .about__tabs {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
   .about__tab {
     width: 20%;
   }
-  .about__container {
+  .about__tab_active {
     position: relative;
   }
-  .about__container::before {
+  .about__tab_active::after {
     content: "";
     position: absolute;
-    top: -19%;
+    left: 50%;
+    bottom: -90px;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     border: 28px solid transparent;
     border-bottom-width: 0;
     border-top: 40px solid #fff;
-  }
-  .about__container_active-1::before {
-    left: 12%;
-  }
-  .about__container_active-2::before {
-    left: 37%;
-  }
-  .about__container_active-3::before {
-    left: 62%;
-  }
-  .about__container_active-4::before {
-    left: 87%;
   }
   .about__info-inner {
     width: 45%;
@@ -434,46 +424,47 @@ body {
   }
 }
 @media all and (orientation: portrait) and (max-width: 768px) {
+  .about__tabs {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .about__tab {
-    width: 40%;
-    margin-top: 2rem;
+    width: 30%;
+    margin-top: 10%;
   }
   .about__tab:nth-child(1),
   .about__tab:nth-child(2) {
     margin-top: 0;
   }
   .about__tab:nth-child(2n) {
-    margin-left: 2rem;
+    margin-left: 14%;
+  }
+  .about__tab_active {
+    background-color: #fd5433;
   }
 }
 @media all and (orientation: landscape) and (max-width: 768px) {
+  .about__tabs {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
   .about__tab {
     width: 20%;
   }
-  .about__container {
+  .about__tab_active {
     position: relative;
   }
-  .about__container::before {
+  .about__tab_active::before {
     content: "";
     position: absolute;
-    top: -11%;
+    left: 50%;
+    bottom: -70px;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     border: 20px solid transparent;
     border-bottom-width: 0;
     border-top: 30px solid #fff;
-  }
-  .about__container_active-1::before {
-    left: 12%;
-  }
-  .about__container_active-2::before {
-    left: 37%;
-  }
-  .about__container_active-3::before {
-    left: 62%;
-  }
-  .about__container_active-4::before {
-    left: 87%;
   }
 }
 .about__container {
@@ -490,8 +481,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
