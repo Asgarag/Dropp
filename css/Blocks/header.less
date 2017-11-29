@@ -10,6 +10,15 @@
 
   .header__menu{
     display: none;
+    animation: opacity 1s;
+  }
+
+  .header__menu_active{
+    display: block;
+  }
+
+  .header__switch_active{
+    transform: rotate(90deg);
   }
 }
 
@@ -37,12 +46,13 @@
 .header__switch{
   background-image: url("../images/hamburger_icon.svg");
   background-repeat: no-repeat;
-  width: 4.5rem;
+  width: 4rem;
   height: 4rem;
   text-indent: 100%;
   overflow: hidden;
   white-space: nowrap;
   cursor: pointer;
+  transition: 1s;
 }
 
 .header__checkbox{

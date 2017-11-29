@@ -1,10 +1,10 @@
 @media screen and (min-width: 769px){
 
-  .contact__form-row{
+  .contact__form-label{
     width: 47%;
   }
 
-  .contact__form-row-contact{
+  .contact__form-label-contact{
     margin-top: 2rem;
   }
 }
@@ -12,7 +12,7 @@
 
 @media screen and (max-width: 768px){
 
-  .contact__form-row{
+  .contact__form-label{
     width: 100%;
 
     &:not(:last-child){
@@ -72,12 +72,24 @@
   font-family: Arial;
 }
 
-.contact__form-row-contact{
+.contact__form-label{
+  position: relative;
+}
+
+.contact__form-label-contact{
   width: 100%;
+  position: relative;
 }
 
 .contact__form-hint{
   position: absolute;
+  top: 2rem;
+  left: 2rem;
+  color: @main-color;
+  font-size: 2rem;
+}
+
+.contact__form-hint_active{
   left: -9999px;
 }
 

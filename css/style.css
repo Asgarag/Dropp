@@ -53,6 +53,15 @@ body {
   }
   .header__menu {
     display: none;
+    -webkit-animation: opacity 1s;
+            animation: opacity 1s;
+  }
+  .header__menu_active {
+    display: block;
+  }
+  .header__switch_active {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
 }
 @media screen and (min-width: 769px) {
@@ -75,12 +84,14 @@ body {
 .header__switch {
   background-image: url("../images/hamburger_icon.svg");
   background-repeat: no-repeat;
-  width: 4.5rem;
+  width: 4rem;
   height: 4rem;
   text-indent: 100%;
   overflow: hidden;
   white-space: nowrap;
   cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 .header__checkbox {
   position: absolute;
@@ -261,7 +272,7 @@ body {
 .section {
   margin-bottom: 2.5rem;
 }
-.section:last-child {
+.section:last-of-type {
   margin-bottom: 0;
 }
 @media screen and (min-width: 769px) {
@@ -467,8 +478,26 @@ body {
     border-top: 30px solid #fff;
   }
 }
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 .about__container {
   display: none;
+  -webkit-animation: opacity 1s;
+          animation: opacity 1s;
 }
 .about__radio {
   position: absolute;
@@ -570,18 +599,18 @@ body {
   margin-left: 5%;
 }
 @media screen and (min-width: 769px) {
-  .contact__form-row {
+  .contact__form-label {
     width: 47%;
   }
-  .contact__form-row-contact {
+  .contact__form-label-contact {
     margin-top: 2rem;
   }
 }
 @media screen and (max-width: 768px) {
-  .contact__form-row {
+  .contact__form-label {
     width: 100%;
   }
-  .contact__form-row:not(:last-child) {
+  .contact__form-label:not(:last-child) {
     margin-bottom: 2rem;
   }
 }
@@ -632,11 +661,21 @@ body {
   min-height: 22rem;
   font-family: Arial;
 }
-.contact__form-row-contact {
+.contact__form-label {
+  position: relative;
+}
+.contact__form-label-contact {
   width: 100%;
+  position: relative;
 }
 .contact__form-hint {
   position: absolute;
+  top: 2rem;
+  left: 2rem;
+  color: #fd5433;
+  font-size: 2rem;
+}
+.contact__form-hint_active {
   left: -9999px;
 }
 .contact__form-button {

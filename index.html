@@ -424,18 +424,18 @@
     </div>
     <div class="contact__content section__content">
       <form class="contact__form main-container" method="post">
-        <div class="contact__form-row">
-          <input class="contact__form-input" type="text" name="name" placeholder="Your name here" required>
-          <label class="contact__form-hint">Your name here</label>
-        </div>
-        <div class="contact__form-row">
-          <input class="contact__form-input" type="email" name="email" placeholder="Email address here" required>
-          <label class="contact__form-hint">Email address here</label>
-        </div>
-        <div class="contact__form-row-contact">
-          <textarea class="contact__form-input contact__form-input-contact" name="contact" placeholder="Your contact here" required></textarea>
-          <label class="contact__form-hint">Your contact here</label>
-        </div>
+        <label class="contact__form-label">
+          <input class="contact__form-input" type="text" name="name" required>
+          <span class="contact__form-hint">Your name here</span>
+        </label>
+        <label class="contact__form-label">
+          <input class="contact__form-input" type="email" name="email" required>
+          <span class="contact__form-hint">Email address here</span>
+        </label>
+        <label class="contact__form-label-contact">
+          <textarea class="contact__form-input contact__form-input-contact" name="contact" required></textarea>
+          <span class="contact__form-hint">Your contact here</span>
+        </label>
         <button class="contact__form-button button">Send messege now</button>
       </form>
       <div class="contact__copyright">
