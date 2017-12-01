@@ -1,9 +1,44 @@
+@media screen and (min-width: 769px){
+
+  .menu__list-item{
+    display: inline-block;
+  }
+
+  .menu__link{
+    display: inline-block;
+    padding: 4.6rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px){
+
+  .menu__list{
+    position: absolute;
+    background-color: @white-color;
+    right: 0;
+    top: 0;
+  }
+
+  .menu__link{
+    display: block;
+    padding: 1.3rem;
+  }
+}
+
+.menu__list{
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+.menu__list-item{
+  text-align: right;
+}
+
 .menu__link{
-  display: inline-block;
-  vertical-align: top;
   font-size: 1.8rem;
   font-weight: 700;
-  padding: 2.5em .8em;
   transition: background-color, color .5s ease-out;
   font-family: Oswald;
   text-transform: uppercase;

@@ -2,6 +2,8 @@
 
   .header__menu{
     width: 100%;
+    position: relative;
+    z-index: 999;
   }
 
   .header__logotype{
@@ -28,16 +30,6 @@
     font-size: 7rem;
   }
 
-  .header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    background-color: @white-color;
-    width: 100%;
-    border: 1px solid @black-color;
-  }
-
   .header__switch{
     display: none;
   }
@@ -52,7 +44,7 @@
   overflow: hidden;
   white-space: nowrap;
   cursor: pointer;
-  transition: 1s;
+  transition: .6s;
 }
 
 .header__checkbox{

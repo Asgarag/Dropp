@@ -1,6 +1,12 @@
 @media screen and (min-width: 769px){
 
-  .contact__form-label{
+  .contact__form-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .contact__form-column{
     width: 47%;
   }
 
@@ -9,15 +15,10 @@
   }
 }
 
-
 @media screen and (max-width: 768px){
 
-  .contact__form-label{
-    width: 100%;
-
-    &:not(:last-child){
+  .contact__form-column:not(:last-of-type){
       margin-bottom: 2rem;
-    }
   }
 }
 
@@ -25,22 +26,21 @@
   background-image: url("../images/bgcity.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: @gray-color;
 }
 
 .contact__form{
   padding-top: 3rem;
   padding-bottom: 8.5rem;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .contact__form-input{
   font-size: 2rem;
-  border: 0;
+  border: none;
   box-sizing: border-box;
   padding: 2rem;
   width: 100%;
+  -webkit-appearance: none;
 
   &::-moz-placeholder{
     color: @main-color;
@@ -67,34 +67,21 @@
   }
 }
 
+.contact__form-row:not(:last-of-type){
+  margin-bottom: 2rem;
+}
+
 .contact__form-input-contact{
   min-height: 22rem;
   font-family: Arial;
 }
 
-.contact__form-label{
-  position: relative;
-}
-
-.contact__form-label-contact{
-  width: 100%;
-  position: relative;
-}
-
 .contact__form-hint{
   position: absolute;
-  top: 2rem;
-  left: 2rem;
-  color: @main-color;
-  font-size: 2rem;
-}
-
-.contact__form-hint_active{
   left: -9999px;
 }
 
 .contact__form-button{
-  margin-top: 2rem;
   font-size: 2.6rem;
   padding-top: 1rem;
   padding-bottom: 1rem;

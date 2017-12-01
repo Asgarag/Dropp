@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dropp</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
+  <script async src="scripts/main.js"></script>
 </head>
 
 <body class="page">
@@ -16,12 +17,26 @@
       </h1>
       <div class="header__switch">Switch menu</div>
       <nav class="header__menu menu">
-        <a class="menu__link" href="#home">Home</a>
-        <a class="menu__link" href="#services">Services</a>
-        <a class="menu__link" href="#portfolio">Portfolio</a>
-        <a class="menu__link" href="#about">About</a>
-        <a class="menu__link" href="#posts">Blog</a>
-        <a class="menu__link" href="#contact">Contact</a>
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a class="menu__link" href="#home">Home</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__link" href="#services">Services</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__link" href="#about">About</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__link" href="#posts">Blog</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__link" href="#contact">Contact</a>
+          </li>
+        </ul>
       </nav>
     </div>
   </header>
@@ -424,19 +439,23 @@
     </div>
     <div class="contact__content section__content">
       <form class="contact__form main-container" method="post">
-        <label class="contact__form-label">
-          <input class="contact__form-input" type="text" name="name" required>
-          <span class="contact__form-hint">Your name here</span>
-        </label>
-        <label class="contact__form-label">
-          <input class="contact__form-input" type="email" name="email" required>
-          <span class="contact__form-hint">Email address here</span>
-        </label>
-        <label class="contact__form-label-contact">
-          <textarea class="contact__form-input contact__form-input-contact" name="contact" required></textarea>
-          <span class="contact__form-hint">Your contact here</span>
-        </label>
-        <button class="contact__form-button button">Send messege now</button>
+        <div class="contact__form-row">
+          <div class="contact__form-column">
+              <input class="contact__form-input" id="name" type="text" name="name" placeholder="Your name here" required>
+              <label class="contact__form-hint" for="name">Your name here</label>
+          </div>
+          <div class="contact__form-column">
+              <input class="contact__form-input" id="email" type="email" name="email" placeholder="Email address here" required>
+              <label class="contact__form-hint" for="email">Email address here</label>
+          </div>
+        </div>
+        <div class="contact__form-row">
+            <textarea class="contact__form-input contact__form-input-contact" id="contact" name="contact" placeholder="Your contact here" required></textarea>
+            <label class="contact__form-hint" for="contact">Your contact here</label>
+        </div>
+        <div class="contact__form-row">
+          <button class="contact__form-button button">Send messege now</button>
+        </div>
       </form>
       <div class="contact__copyright">
         <span class="contact__copyright-text">
@@ -448,7 +467,6 @@
       </div>
     </div>
   </section>
-  <script src="scripts/switch.js"></script>
 </body>
 
 </html>
