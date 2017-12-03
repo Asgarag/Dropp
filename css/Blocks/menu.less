@@ -2,12 +2,15 @@
 
   .menu__list-item{
     display: inline-block;
+    text-align: right;
   }
 
   .menu__link{
     display: inline-block;
     padding: 4.6rem 1.5rem;
   }
+
+
 }
 
 @media screen and (max-width: 768px){
@@ -17,12 +20,19 @@
     background-color: @white-color;
     right: 0;
     top: 0;
+    width: 100%;
   }
 
   .menu__link{
     display: block;
     padding: 1.3rem;
   }
+
+  .menu__list-item{
+    text-align: center;
+    border-bottom: 1px solid @black-color;
+  }
+
 }
 
 .menu__list{
@@ -30,10 +40,6 @@
   margin-top: 0;
   margin-bottom: 0;
   list-style-type: none;
-}
-
-.menu__list-item{
-  text-align: right;
 }
 
 .menu__link{
