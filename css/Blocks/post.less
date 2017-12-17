@@ -8,11 +8,11 @@
     }
   }
 
-  .post__time::after{
+  .post__header::after{
     border-bottom: 2px solid @main-color;
   }
 
-  .post__text{
+  .post__content{
     margin-top: 3rem;
   }
 }
@@ -31,11 +31,11 @@
     margin-top: .8rem;
   }
 
-  .post__time::after{
+  .post__header::after{
     border-bottom: 5px solid @main-color;
   }
 
-  .post__text{
+  .post__content{
     margin-top: 2.5rem;
   }
 }
@@ -73,19 +73,23 @@
   font-size: 1.5rem;
   font-weight: 700;
   color: @gray-color;
-  padding-bottom: 5px;
   position: relative;
   font-family: Oswald;
+}
+
+.post__header{
+  position: relative;
+  padding-bottom: 5px;
 
   &::after{
     content: "";
     position: absolute;
     left: 0;
     bottom: -5px;
-    width: 60%;
+    width: 8rem;
   }
 }
 
-.post__text{
+.post__content{
   margin-bottom: 0;
 }
